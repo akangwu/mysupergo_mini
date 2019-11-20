@@ -1,0 +1,17 @@
+<!--pages/home/home.wxml-->
+<!-- 1.轮播图数据展示 -->
+<w-swiper list="{{banners}}"></w-swiper>
+<!-- 2.推荐数据展示 -->
+
+<!-- <view class="recommend">
+  <block wx:for="{{recommend}}" wx:key="{{index}}">
+    <view  class="recommend-item">
+      <image src="{{item.image}}" mode="widthFix"></image>
+      <view>{{item.title}}</view>
+    </view>
+  </block>
+</view> -->
+<w-recommend recommend="{{recommend}}"/>
+
+<!-- 3.流行数据展示，这里是一个图片，如果是真实的数据，我们直接用flex布局做就可以了 -->
+<w-popular></w-popular>
